@@ -13,6 +13,7 @@ int reverseNumber(int n){
 }
 
 // Normal Appraoach
+// O(Number of digits) ---> Time Complexity and O(1) Space Complexity
 bool checkPalindrome(int n){
     int reversednumber = reverseNumber(n);
     return (n==reversednumber);
