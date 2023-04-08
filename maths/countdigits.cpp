@@ -16,7 +16,9 @@ int main(){
     int n;
     cin>>n;
 
-    cout<<findDigits(n);
+    // cout<<findDigits(n);
+
+    cout<<(floor(log10(n)+1));
 
     return 0;
 }
