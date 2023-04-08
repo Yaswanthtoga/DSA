@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// Normal Appraoach
+// Reverse the Number
 int reverseNumber(int n){
     int reversednumber = 0;
     while(n>9){
@@ -12,11 +12,17 @@ int reverseNumber(int n){
     return reversednumber+n;
 }
 
+// Normal Appraoach
+bool checkPalindrome(int n){
+    int reversednumber = reverseNumber(n);
+    return (n==reversednumber);
+}
+
 int main(){
 
     int n;
     cin>>n;
-    cout<<reverseNumber(n);
+    cout<<checkPalindrome(n);
 
     return 0;
 }
